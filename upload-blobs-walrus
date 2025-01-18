@@ -1,0 +1,28 @@
+import os
+import subprocess
+import time
+
+# Thư mục chứa file
+folder_path = r"G:\BLOBS-WALRUS"
+
+# Số epochs cần cho lệnh walrus store
+epochs = "10"  # Thay đổi giá trị phù hợp theo nhu cầu của bạn
+
+# Lặp qua tất cả file trong thư mục
+for file_name in os.listdir(folder_path):
+    file_path = os.path.join(folder_path, file_name)
+    if os.path.isfile(file_path):  # Chỉ lấy file, không lấy thư mục
+        print(f"Đang lưu trữ file: {file_path}")
+        try:
+            # Thực hiện lệnh walrus store với tham số --epochs
+            result = subprocess.run(
+                ["walrus", "store", "--epochs", epochs, file_path],
+                check=True,
+                capture_output=True,
+                text=True
+            )
+            print(f"Thành công: {result.stdout.strip()}")
+        except subprocess.CalledProcessError as e:
+            print(f"Lỗi khi lưu file: {file_path} - {e.stderr.strip()}")
+            break  # Dừng nếu gặp lỗi
+        time.sleep(3)  # Đợi 3 giây trước khi tiếp tục (có thể điều chỉnh thời gian)
