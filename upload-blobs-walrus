@@ -21,7 +21,7 @@ for file_name in os.listdir(folder_path):
                 capture_output=True,
                 text=True
             )
-            print(f"Thành công: {result.stdout.strip()}")
+            print(f"Thành công Oke: {result.stdout.strip()}")
         except subprocess.CalledProcessError as e:
             print(f"Lỗi khi lưu file: {file_path} - {e.stderr.strip()}")
             break  # Dừng nếu gặp lỗi
