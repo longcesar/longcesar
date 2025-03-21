@@ -25,4 +25,4 @@ for file_name in os.listdir(folder_path):
         except subprocess.CalledProcessError as e:
             print(f"Lỗi khi lưu file: {file_path} - {e.stderr.strip()}")
             break  # Dừng nếu gặp lỗi
-        time.sleep(3)  # Đợi 3 giây trước khi tiếp tục (có thể điều chỉnh thời gian)
+        time.sleep(3)  # Đợi 3 giây trước khi tiếp tục nha (có thể điều chỉnh thời gian)
