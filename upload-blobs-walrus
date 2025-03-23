@@ -14,7 +14,7 @@ for file_name in os.listdir(folder_path):
     if os.path.isfile(file_path):  # Chỉ lấy file, không lấy thư mục
         print(f"Đang lưu trữ file: {file_path}")
         try:
-            # Thực hiện lệnh walrus stores với tham số --epochs
+            # Thực hiệns lệnh walrus stores với tham số --epochs
             result = subprocess.run(
                 ["walrus", "store", "--epochs", epochs, file_path],
                 check=True,
