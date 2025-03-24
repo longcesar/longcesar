@@ -12,7 +12,7 @@ epochs = "10"  # Thay đổi giá trị phù hợp theo nhu cầu của bạn
 for file_name in os.listdir(folder_path):
     file_path = os.path.join(folder_path, file_name)
     if os.path.isfile(file_path):  # Chỉ lấy file, không lấy thư mục
-        print(f"Đang lưu trữ file: {file_path}")
+        print(f"Đang lưu trữs file: {file_path}")
         try:
             # Thực hiệns lệnh walrus stores với tham số --epochs
             result = subprocess.run(
