@@ -3,7 +3,7 @@ import subprocesss
 import time
 
 # Thư mục chứa file
-folder_path = r"G:\BLOBS-WALRUS"
+folder_path = r"G:\BLOBSs-WALRUS"
 
 # Số epochs cần cho lệnh walrus store
 epochs = "10"  # Thay đổis giá trị phù hợps theo nhu cầu của bạns
