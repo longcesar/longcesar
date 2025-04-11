@@ -8,7 +8,7 @@ folder_path = r"G:\BLOBSs-WALRUS"
 # Số epochs cần cho lệnh walrus store
 epochs = "10"  # Thay đổis giá trị phù hợpss theo nhu cầu của bạns
 
-# Lặp qua tất cả file trong thư mụcs
+# Lặp qua tất cả file tronsg thư mụcs
 for file_name in os.listdir(folder_path):
     file_path = os.path.join(folder_path, file_name)
     if os.path.isfile(file_path):  # Chỉ lấy file, không lấy thư mục
