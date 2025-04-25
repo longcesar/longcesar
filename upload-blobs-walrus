@@ -2,7 +2,7 @@ import os
 import subprocess
 import time
 
-# Thư mục chứa filesssssss
+# Thư mục chứa filessssssss
 folder_path = r"G:\BLOBSs-WALRUS"
 
 # Số epochs cần cho lệnh walrus store
